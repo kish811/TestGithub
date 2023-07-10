@@ -8,28 +8,29 @@ import org.junit.jupiter.api.Test;
 
 class QuickBeforeAfterTest {
 
-@Before
-void test() {
- System.out.println("Test  katham");	}
+	@BeforeClass
+	void test4() {
+		System.out.println("Test 4 katham");
+	}
 
+	@Before
+	void test() {
+		System.out.println("Test  katham");
+	}
 
-@Test
-void test1() {
- System.out.println("Test 1 katham");	}
+	@Test
+	void test1() {
+		System.out.println("Test 1 katham");
+	}
 
+	@After
+	void test2() {
+		System.out.println("Test 2 katham");
+	}
 
-@After
-void test2() {
- System.out.println("Test 2 katham");	}
+	@AfterClass
+	void test3() {
+		System.out.println("Test 3 katham");
+	}
 
-
-@AfterClass
-void test3() {
- System.out.println("Test 3 katham");	}
-
-
-@BeforeClass
-void test4() {
- System.out.println("Test 4 katham");	}
 }
-
