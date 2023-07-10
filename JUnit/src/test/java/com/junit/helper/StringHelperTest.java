@@ -1,10 +1,10 @@
 package com.junit.helper;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 import org.junit.jupiter.api.Test;
 
-class StringHelperTest {
+public class StringHelperTest {
 
 	
 	//AACD =CD ,ACDI , AAAA,ABCD
@@ -27,6 +27,13 @@ class StringHelperTest {
 	//	assertEquals("CD",helper.truncateAInFirst2Positions("AACD"));
 		assertEquals("",helper.truncateAInFirst2Positions("AA"));
 
+	}
+	
+	@Test
+	public void testareFirstAndLastTwoCharactersTheSame() {
+		StringHelper helper = new StringHelper();
+
+		assertTrue(helper.areFirstAndLastTwoCharactersTheSame("ABAB"));
 	}
 
 }

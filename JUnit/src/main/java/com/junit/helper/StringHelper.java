@@ -1,4 +1,4 @@
-package com.junit.helper;
+ package com.junit.helper;
 
 public class StringHelper {
 
